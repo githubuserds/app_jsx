@@ -10,38 +10,29 @@
 </head>
 
 
-     <form id="formulario">
+     <form id="formulario" enctype="multipart/form-data">
+          <h3>Insertar img</h3>
 
-          <input type="file" id="img">
+          <br>
 
-          <button id="enviar">Submit</button>
+          <input type="file" id="foto" onchange="vista_return(Event);" required>
+
 
      </form>
 
-     <div class="result"></div>
+     <div class="result">
+          <img src="" alt="" id="img-foto" width="50%">
 
-     
+     </div>
 
-     <!-- <img scr="" id="result"> -->
 
-     <!-- <h1>JavaScript - Ejercicio 1384</h1>
 
-    <button onclick="cargarMostrarImagenAleatoria();">Cargar y mostrar imagen</button> -->
+     <button type="submit" id="get_form">Enviar From</button>
 
 
 
      <script src="logic.js"></script>
 
-     <!-- <script>
-          var img1 = new Image(); // HTML5 Constructor
-          img1.src = 'image1.png';
-          img1.alt = 'alt';
-          document.body.appendChild(img1);
-
-          
-          // Usando la primera imagen en el documento
-          alert(document.images[0].src);
-     </script> -->
 </body>
 
 </html>
